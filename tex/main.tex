@@ -1,0 +1,100 @@
+\documentclass[11pt,reqno]{amsart}
+\input{preamble}
+\graphicspath{{figures/}}
+\providecommand{\extref}[1]{\texttt{[?#1]}}
+
+\title[Algebraic loci of Weil classes]
+      {Algebraic Loci of Weil Classes on Abelian Varieties}
+
+\author{Deep Bhattacharjee\textsuperscript{\dag}}
+\address{Electro-Gravitational Space Propulsion Laboratory (EGSPL),
+  Bhubaneswar, Odisha 751030, India}
+\curraddr{Formerly, University of Calcutta (Heramba Chandra College),
+  23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India}
+\email{d.bhattacharjee@erl-forschung.de}
+\email{itsdeep@live.com}
+\email{egspl@proton.me}
+\urladdr{\textnormal{ORCID
+  \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}}}
+
+\author{Ushashi Bhattacharya}
+\address{Formerly, National Taiwan University, Taipei 106319, Taiwan}
+\email{rai.bhattacharya.in@gmail.com}
+\urladdr{\textnormal{ORCID
+  \href{https://orcid.org/0009-0002-2254-3914}{0009-0002-2254-3914}}}
+
+\thanks{\textsuperscript{\dag}\,Corresponding author: Deep Bhattacharjee,
+\texttt{d.bhattacharjee@erl-forschung.de}, \texttt{itsdeep@live.com}.}
+
+\thanks{Deep Bhattacharjee: Electro-Gravitational Space Propulsion Laboratory
+(EGSPL), Bhubaneswar, Odisha 751030, India; formerly, University of Calcutta
+(Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West
+Bengal, India. Ushashi Bhattacharya: formerly, National Taiwan University,
+Taipei 106319, Taiwan.}
+
+\thanks{This paper and its companions \cite{paperII,paperIII} together replace
+the earlier paper \emph{Algebraic loci of Weil classes on abelian varieties}
+by the authors and Priyabrata Mandal (archive \cite{BMB26}); every result of
+that paper appears in one of the three with its proof. The preprint
+\emph{Relative secant cycles and Hodge classes} \cite{BB26} contains errors
+and incomplete proofs and is replaced by them.}
+
+\thanks{Every proof is given in the text. Programs that repeat much of the
+finite arithmetic, and a Lean~4 certificate of part of it, are archived as
+described in the statement on data availability at the end of the paper; no
+statement rests on them.}
+
+\date{\today}
+
+\subjclass[2020]{Primary 14C30, 14C25; Secondary 14K22, 14K20, 14D07, 14G35, 11G10, 32G20}
+
+\keywords{Hodge conjecture, Weil classes, algebraic locus, complex multiplication}
+
+\begin{document}
+
+\begin{abstract}
+We prove that in every family of abelian varieties of Weil type, for every
+CM field, dimension and discriminant, the algebraic locus of the Weil
+classes contains an explicit point of complex multiplication, is dense, is a
+countable union of closed algebraic strata of the Shimura variety of the
+family, and is either the whole family or meagre, so that the Weil classes
+are algebraic on every member exactly when that locus is closed, and the
+Hodge conjecture for the very general member is that one topological
+statement.
+\end{abstract}
+
+\maketitle
+
+\setcounter{tocdepth}{1}
+\begingroup
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+
+\input{sections/01_introduction}
+\input{sections/02_conventions}
+\input{sections/03_weiltype}
+\input{sections/03b_explicit_weil}
+\input{sections/04_characters}
+\input{sections/05_fouriermukai}
+\input{sections/06_divisor_obstruction}
+\input{sections/07_numerology}
+\input{sections/08_semiregularity}
+\input{sections/09_hyperplane}
+\input{sections/09b_kugasatake}
+\input{sections/10_reduction}
+\input{sections/10b_escape}
+\input{sections/10c1_secant}
+\input{sections/10c2_basepoints}
+\input{sections/10c3_closedlocus}
+\input{sections/10d1_cmfields}
+\appendix
+\input{appendices/A_exterior}
+\input{appendices/B_cdk}
+\input{appendices/C_albert}
+
+\input{declarations}
+
+\input{bibliography}
+
+\end{document}
